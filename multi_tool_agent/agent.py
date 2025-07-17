@@ -9,6 +9,9 @@ def get_weather(city: str) -> dict:
     if city.lower() == "new york":
         return {"status": "success",
                 "report": "The weather in New York is sunny with a temperature of 25 degrees Celsius (77 degrees Fahrenheit)."}
+    elif city.lower() == "Singapore":
+        return {"status": "success",
+                "report": "The weather in Singapore is Humid with a temperature of 30 degrees Celsius (100 degrees Fahrenheit)."}
     else:
         return {"status": "error",
                 "error_message": f"Weather information for '{city}' is not available."}
