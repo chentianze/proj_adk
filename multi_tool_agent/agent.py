@@ -24,6 +24,8 @@ def get_current_time(city:str) -> dict:
 
     if city.lower() == "new york":
         tz_identifier = "America/New_York"
+    elif city.lower() == "singapore":
+        tz_identifier = "Asia/singapore"
     else:
         return {"status": "error",
                 "error_message": f"Sorry, I don't have timezone information for {city}."}
